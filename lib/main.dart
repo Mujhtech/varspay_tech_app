@@ -18,7 +18,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 4), () {
+    Timer(Duration(seconds: 6), () {
       Navigator.pushReplacement(
           context, MaterialPageRoute(builder: (context) => WelcomeScreen()));
     });
@@ -39,17 +39,8 @@ class _MyAppState extends State<MyApp> {
             children: [
               Image.asset(
                 'assets/images/varspay.png',
-                width: 250,
+                width: 180,
               ),
-              Container(
-                width: 30,
-                height: 30,
-                margin: EdgeInsets.symmetric(vertical: 50),
-                child: CircularProgressIndicator(
-                  strokeWidth: 2,
-                  valueColor: AlwaysStoppedAnimation<Color>(Color(0xFF7B6CED)),
-                ),
-              )
             ],
           ),
         ),
