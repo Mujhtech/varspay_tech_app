@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:varspay_tech/screens/SecondWelcomeScreen.dart';
 import 'dart:async';
-import 'package:varspay_tech/screens/WelcomeScreen.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -19,8 +19,8 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
     Timer(Duration(seconds: 6), () {
-      Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => WelcomeScreen()));
+      Navigator.pushReplacement(context,
+          MaterialPageRoute(builder: (context) => SecondWelcomeScreen()));
     });
   }
 
